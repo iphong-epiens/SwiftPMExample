@@ -45,7 +45,7 @@ extension SwiftPMExample.TextFields {
                     .foregroundColor(self.isValid ? .blue : .red)
                 )
                 .onReceive(Just(self.text)) { _ in
-//                    self.formatMobileNo()
+                    self.formatMobileNo()
                 }
         }
         
