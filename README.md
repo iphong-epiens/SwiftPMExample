@@ -41,7 +41,6 @@ SKIP_INSTALL=NO \\
 BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
 ```
 
-
 ##  **아카이브 파일을 XCFramework로 변환**
 
 ```swift
@@ -51,11 +50,11 @@ xcodebuild -create-xcframework \\
 ```
 
 # Swift Package 작업
-- `Swift Package` 프로젝트의 `Package.swift` 파일에 `targets` 옵션을  `binaryTarget` 로 설정하고, XCFramework 파일 추가
-
+- `Swift Package` 프로젝트의 `Package.swift` 파일에 `targets` 옵션을 `binaryTarget` 로 설정하고, `XCFramework` 파일 추가
+- Swift Package 버전 정보 변경
 
 # Swift Package Manager 배포
-- `GitHub Repository`에 소스 업로드 후 추가한 버전을 `Git Tage`로 추가 후  `Swift Package Manager`로 작업한 프레임워크 배포
+- `GitHub Repository`에 소스 업로드 후 변경한 버전을 `Git Tage`로 추가 후 `Swift Package Manager`로 작업한 프레임워크 배포
 
 ## Reference
 
