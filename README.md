@@ -6,10 +6,10 @@
 
 # 작업 순서
 
-- [Framework 구현](# framework  구현)
--  [XCFramework  생성](# xcframework  생성)
-- [Swift Package 작업](#  swift package 작업)
--  [Swift Package Manager 배포](# swift package manager 배포)
+[Framework 구현](# framework  구현)
+[XCFramework  생성](# xcframework  생성)
+[Swift Package 작업](#  swift package 작업)
+[Swift Package Manager 배포](# swift package manager 배포)
 
 # Framework  구현
  
