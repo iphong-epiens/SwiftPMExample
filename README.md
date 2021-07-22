@@ -2,7 +2,7 @@
 
 타사에 방송 송출 기능을 제공하기 위한 `Framework`는 소스를 외부에서 확인할 수 없도록 구현되어야 한다. 구현 소스 내용의 `은닉성(encapsulation)`을 보장하기 위해 [Binary Framework](https://developer.apple.com/videos/play/wwdc2019/416/) 형태로 구현되어야 한다. 
 
-앱에서 사용하는 `오픈 소스 라이브러리`는 `Framework`라는 명칭 대신 구분을 위해 `Third Party 라이브러리`로 표기함.
+앱에서 사용하는 `오픈 소스 Library`는 `Framework`라는 명칭 대신 구분을 위해 `Third Party` Library로 표기함.
 
 현재 애플에서 제공하는 프레임워크 방식은 [XCFramework](https://help.apple.com/xcode/mac/11.4/#/dev544efab96)이며,  `Binary Framework` Target 옵션으로 생성한다. 배포 방식은 애플에서 지원하는 `Swift Package Manager` 방식 및  `Thrid Party` 배포 방식인 [Cocoapod](https://cocoapods.org)이나 [Carthage](https://github.com/Carthage/Carthage) 방식으로도 배포가 가능하다.
 
@@ -15,19 +15,19 @@
 
 # Framework 구현
  
-## Framework로 구현하고자 하는 기존 소스 및 리소스를 구현 프로젝트로 가져온다. 기존 구현 내용 중 Third Party 라이브러리 기능을 적용하기 위해 소스 원본을 가져온다.
+## Framework로 구현하고자 하는 기존 소스 및 리소스를 구현 프로젝트로 가져온다. 기존 구현 내용 중 Third Party Library 기능을 적용하기 위해 소스 원본을 가져온다.
 
-## Third Party 라이브러리 추가
+## Third Party Library 추가
 
-- [ ]  작업하는 소스 프로젝트에 추가하고자 하는 라이브러리를 소스 형태로  추가하고, 추가된 프레임워크의 타겟으로 변경하여 라이브러리를 컴파일하여, 오브젝트 형태로 프레임워크에 추가한다.
+- [ ]  작업하는 소스 프로젝트에 추가하고자 하는 Library를 소스 형태로  추가하고, 추가된 프레임워크의 타겟으로 변경하여 Library를 컴파일하여, 오브젝트 형태로 프레임워크에 추가한다.
 
-- [ ]  추가한 라이브러리를 XCode Menu의 General→Frameworks and Libraries에  라이브러리의  `.framework` 파일을 Drag & Drop 으로 추가하고, `Embed & Sign` 형태로 설정한다. Build Phase 메뉴에서 `Link Binary With Libraries` 메뉴에 라이브러리가 포함되어 있는지 확인다.
+- [ ]  추가한 Library를 XCode Menu의 General→Frameworks and Libraries에  Library의  `.framework` 파일을 Drag & Drop 으로 추가하고, `Embed & Sign` 형태로 설정한다. Build Phase 메뉴에서 `Link Binary With Libraries` 메뉴에 Library가 포함되어 있는지 확인다.
 
-- [ ]  추가한 라이브러리를 소스에서 import 후 라이브러리 동작을 확인한다.
+- [ ]  추가한 Library를 소스에서 import 후 Library 동작을 확인한다.
 
 - [ ]  `Build Settings` 메뉴에서  `BUILD_LIBRARIES_FOR_DISTRIBUTION`  옵션을 `YES`로 설정한다.
 
-> `주의: @import` 구문이 포함된 라인에 Warning 메세지가  발생할 경우 정상적으로 라이브러리가 추가되지 않은것이다.
+> `주의: @import` 구문이 포함된 라인에 Warning 메세지가  발생할 경우 정상적으로 Library가 추가되지 않은것이다.
 
 # XCFramework 생성
 
@@ -59,7 +59,7 @@ xcodebuild -create-xcframework \\
 
 # Swift Package Manager 배포
 - `GitHub Repository`에 소스 업로드 후 변경한 버전을 `Git Tag`로 추가하고,`Tag`를 `Release`로 변경하여 배포한다.
-- 배포된 `Framework`를 사용하기 위해 porting한 앱은 `Framework` 파일 내부에 오브젝트 형태로 존재하는 라이브러리를 `Framework` 적용시 같이 동일한 버전으로 적용해야 정상동작한다. 
+- 배포된 `Framework`를 사용하기 위해 porting한 앱은 `Framework` 파일 내부에 오브젝트 형태로 존재하는 Library를 `Framework` 적용시 같이 동일한 버전으로 적용해야 정상동작한다. 
 
 ## Reference
 
