@@ -1,4 +1,4 @@
-# XCFramework Guidelines
+# Framework Guidelines
 
 타사에 방송 송출 기능을 제공위한 프레임워크는 소스를 외부에서 확인할 수 없도록 구현되어야 한다.  구현 소스 내용의 은닉성을 지원하기 위해서는  [Binary Framework](https://developer.apple.com/videos/play/wwdc2019/416/) 형태로 구현되어야 한다. 
 
