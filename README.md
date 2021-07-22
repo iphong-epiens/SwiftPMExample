@@ -15,7 +15,7 @@
 
 # Framework 구현
  
-## Framework로 구현하고자 하는 기존 소스 및 리소스를 구현 프로젝트로 가져온다. 기존 구현 내용 중 Third Party Library 기능을 적용하기 위해 소스 원본을 가져온다.
+## Framework로 구현하고자 하는 기존 소스 및 리소스를 구현 프로젝트로 가져온다. 구현 내용 중 Third Party Library 기능을 적용하기 위해 Library Source 원본을 가져온다.
 
 ## Third Party Library 추가
 
