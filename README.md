@@ -1,6 +1,8 @@
 # 💾 Framework Guidelines
 
-타사에 방송 송출 기능을 제공위한 프레임워크는 소스를 외부에서 확인할 수 없도록 구현되어야 한다.  구현 소스 내용의 은닉성을 지원하기 위해서는  [Binary Framework](https://developer.apple.com/videos/play/wwdc2019/416/) 형태로 구현되어야 한다. 
+타사에 방송 송출 기능을 제공하기 위한 `Framework`는 소스를 외부에서 확인할 수 없도록 구현되어야 한다. 구현 소스 내용의 `은닉성(encapsulation)`을 지원하기 위해서는 [Binary Framework](https://developer.apple.com/videos/play/wwdc2019/416/) 형태로 구현되어야 한다. 
+
+앱에서 사용하는 `오픈 소스 라이브러리`는 `Framework`라는 명칭 대신 구분을 위해 `Third Party 라이브러리`로 표기함.
 
 현재 애플에서 제공하는 프레임워크 방식은 [XCFramework](https://help.apple.com/xcode/mac/11.4/#/dev544efab96)이며,  `Binary Framework` Target 옵션으로 생성한다. 배포 방식은 애플에서 지원하는 `Swift Package Manager` 방식 및  `Thrid Party` 배포 방식인 [Cocoapod](https://cocoapods.org)이나 [Carthage](https://github.com/Carthage/Carthage) 방식으로도 배포가 가능하다.
 
