@@ -8,7 +8,7 @@
 
 - [Framework 구현](#framework-구현)
 - [XCFramework  생성](#xcframework-생성)
-- [Swift Package 작업](#swift-package-작업)
+- [Swift Package 수정](#swift-package-수정)
 - [Swift Package Manager 배포](#swift-package-manager-배포)
 
 # Framework 구현
@@ -49,7 +49,7 @@ xcodebuild -create-xcframework \\
 -output './build/DemoXCFramework.xcframework'
 ```
 
-# Swift Package 작업
+# Swift Package 수정
 - `Swift Package` 프로젝트의 `Package.swift` 파일에 `targets` 옵션을 `binaryTarget` 로 설정하고, `XCFramework` 파일 추가
 - Swift Package 버전 정보 변경
 
