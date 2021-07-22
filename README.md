@@ -56,7 +56,7 @@ xcodebuild -create-xcframework \\
 - `Swift Package` 버전 정보 변경
 
 # Swift Package Manager 배포
-- `GitHub Repository`에 소스 업로드 후 변경한 버전을 `Git Tage`로 추가하고,`Tag`를 `Release`로 변경하여 배포한다.
+- `GitHub Repository`에 소스 업로드 후 변경한 버전을 `Git Tag`로 추가하고,`Tag`를 `Release`로 변경하여 배포한다.
 
 ## Reference
 
