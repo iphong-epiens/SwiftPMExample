@@ -35,10 +35,10 @@ XCFramework는 `Platform` (MacOs, iOS, iOS-Simulator, iPadOS, WatchOS) 별로 xc
 
 ```swift
 xcodebuild archive \\
--scheme `DemoXCFramework` \\
+-scheme DemoXCFramework \\
 -configuration Release \\
 -destination 'generic/platform=iOS' \\
--archivePath './build/`DemoXCFramework`.framework-iphoneos.xcarchive' \\
+-archivePath './build/DemoXCFramework.framework-iphoneos.xcarchive' \\
 SKIP_INSTALL=NO \\
 BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
 ```
@@ -47,8 +47,8 @@ BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
 
 ```swift
 xcodebuild -create-xcframework \\
--framework './build/`DemoXCFramework`.framework-iphoneos.xcarchive/Products/Library/Frameworks/`DemoXCFramework`.framework' \\
--output './build/`DemoXCFramework`.xcframework'
+-framework './build/DemoXCFramework.framework-iphoneos.xcarchive/Products/Library/Frameworks/DemoXCFramework.framework' \\
+-output './build/DemoXCFramework`.xcframework
 ```
 
 # Swift Package 수정
