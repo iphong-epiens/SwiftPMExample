@@ -59,8 +59,7 @@ xcodebuild -create-xcframework \\
 
 ## Reference
 
-[Create an XCFramework](https://help.apple.com/xcode/mac/11.4/#/dev544efab96)
-
-[Distributing Binary Frameworks as Swift Packages](https://developer.apple.com/documentation/swift_packages/distributing_binary_frameworks_as_swift_packages)
+1. [Create an XCFramework](https://help.apple.com/xcode/mac/11.4/#/dev544efab96)
+2. [Distributing Binary Frameworks as Swift Packages](https://developer.apple.com/documentation/swift_packages/distributing_binary_frameworks_as_swift_packages)
 
 **XCode→ General→Frameworks,Libraries, and Embeded Content에**
