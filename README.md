@@ -6,12 +6,12 @@
 
 # 작업 순서
 
-- [Framework 구현](#framework--구현)
-- [XCFramework  생성](# XCFramework  생성)
+- [Framework 구현](#framework-구현)
+- [XCFramework  생성](# XCFramework-생성)
 - [Swift Package 작업](#  Swift Package 작업)
 - [Swift Package Manager 배포](# Swift Package Manager 배포)
 
-# Framework  구현
+# Framework 구현
  
 ## `Third Party` 라이브러리 추가
 
@@ -25,7 +25,7 @@
 
 > `@import` 구문이 포함된 라인에 Warning 메세지가  발생할 경우 정상적으로 라이브러리가 추가되지 않은것이다.
 
-# XCFramework  생성
+# XCFramework 생성
 
 XCFramework는 `Platform` (MacOs, iOS, iOS-Simulator, iPadOS, WatchOS) 별로 아카이빙 파일을 생성할 수 있다. 구현 소스는 전화번호 인증 및 카메라 송출 기능이 포함되어 있기 때문에, 시뮬레이터에서는 사용할 수 없기 때문에 iOS 타켓으로만 아카이빙한다.
 
