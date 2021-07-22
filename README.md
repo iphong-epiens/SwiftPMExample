@@ -23,7 +23,7 @@
 
 - [ ]  `Build Settings` 메뉴에서  `BUILD_LIBRARIES_FOR_DISTRIBUTION`  옵션을 `YES`로 설정한다.
 
-> `@import` 구문이 포함된 라인에 Warning 메세지가  발생할 경우 정상적으로 라이브러리가 추가되지 않은것이다.
+> `주의: @import` 구문이 포함된 라인에 Warning 메세지가  발생할 경우 정상적으로 라이브러리가 추가되지 않은것이다.
 
 # XCFramework 생성
 
