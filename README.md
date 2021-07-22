@@ -57,7 +57,7 @@ xcodebuild -create-xcframework \\
 
 # Swift Package Manager 배포
 - `GitHub Repository`에 소스 업로드 후 변경한 버전을 `Git Tag`로 추가하고,`Tag`를 `Release`로 변경하여 배포한다.
-- `Framework`를 porting한 앱은 `Framework` 파일 내부에 오브젝트 형태로 존재하는 라이브러리를 `Framework` 적용시 같이 동일한 버전으로 적용해야 정상동작한다. 
+- 배포된 `Framework`를 사용하기 위해 porting한 앱은 `Framework` 파일 내부에 오브젝트 형태로 존재하는 라이브러리를 `Framework` 적용시 같이 동일한 버전으로 적용해야 정상동작한다. 
 
 ## Reference
 
