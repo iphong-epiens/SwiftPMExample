@@ -4,7 +4,7 @@
 
 앱에서 사용하는 `오픈 소스 Library`는 `Framework`라는 명칭 대신 구분을 위해 `Third Party` Library로 표기함.
 
-현재 애플에서 제공하는 프레임워크 방식은 [XCFramework](https://help.apple.com/xcode/mac/11.4/#/dev544efab96)이며,  `Binary Framework` Target 옵션으로 생성한다. 배포 방식은 애플에서 지원하는 `Swift Package Manager` 방식 및  `Thrid Party` 배포 방식인 [Cocoapod](https://cocoapods.org)이나 [Carthage](https://github.com/Carthage/Carthage) 방식으로도 배포가 가능하다.
+현재 애플에서 제공하는 프레임워크 방식은 [XCFramework](https://help.apple.com/xcode/mac/11.4/#/dev544efab96)이며,  `Binary Framework` Target 옵션으로 생성한다. 배포 방식은 애플에서 지원하는 `Swift Package Manager` 방식 및 `Thrid Party` 배포 방식인 [Cocoapod](https://cocoapods.org)이나 [Carthage](https://github.com/Carthage/Carthage) 방식으로도 배포가 가능하다.
 
 # 작업 순서
 
@@ -31,7 +31,7 @@
 
 # XCFramework 생성
 
-XCFramework는 `Platform` (MacOs, iOS, iOS-Simulator, iPadOS, WatchOS) 별로 xcarchive 파일을 생성할 수 있다. 구현 소스는 전화번호 인증 및 카메라 송출 기능이 포함되어 있기 때문에, 시뮬레이터에서는 사용할 수 없기 때문에 iOS 타켓으로만 아카이빙한다.
+XCFramework는 `Platform` (MacOS, iOS, iOS-Simulator, iPadOS, WatchOS) 별로 xcarchive 파일을 생성할 수 있다. 구현 소스는 전화번호 인증 및 카메라 송출 기능이 포함되어 있기 때문에, 시뮬레이터에서는 사용할 수 없기 때문에 iOS 타켓으로만 아카이빙한다.
 
 ##  **iOS Framework로 xcarchive 파일 생성**
 
